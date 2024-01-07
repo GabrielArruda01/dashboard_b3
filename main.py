@@ -13,7 +13,7 @@ import streamlit as st
 import matplotlib.pyplot as plt
 from pandas.tseries.offsets import DateOffset
 
-file_path = '/Users/gabrielarruda/PycharmProjects/dashboard_b3V/IBOVDia_08-01-24.csv'
+file_path = './data/IBOVDia_08-01-24.csv'
 
 tickers = pd.read_csv(file_path, encoding='ISO-8859-1', sep=';').Codigo
 st.set_page_config(layout="wide")
